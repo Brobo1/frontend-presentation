@@ -12,9 +12,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background-color: #2a9d8f;
+  background-color: #d3f7df;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  color: white;
+  color: #333;
 }
 
 #navbarTitle {
@@ -30,6 +30,40 @@
   gap: 20px;
 }
 
+.nav-btn {
+  background: none;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+  background-color: rgba(5, 136, 92, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-btn.highlight {
+  background-color: #05885c;
+  color: white;
+  box-shadow: 0 4px 10px rgba(5, 136, 92, 0.3);
+}
+
+.nav-btn.highlight:hover,
+.nav-btn.highlight:focus {
+  background-color: #046d4a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(5, 136, 92, 0.4);
+}
+
 #stepsContainer {
   display: flex;
   gap: 30px;
@@ -43,7 +77,9 @@
   padding: 20px;
   width: 220px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 #stepContainer:hover {
@@ -59,7 +95,7 @@
 }
 
 #stepContainer h2 {
-  color: #2a9d8f;
+  color: #05885c;
   margin: 10px 0;
   font-size: 1.3em;
 }
@@ -84,7 +120,9 @@
   width: 280px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .subscription-tier:hover {
@@ -101,7 +139,7 @@
 .subscription-tier .price {
   font-size: 1.6em;
   font-weight: 600;
-  color: #2a9d8f;
+  color: #05885c;
   margin: 15px 0;
 }
 
@@ -118,23 +156,30 @@
 }
 
 .subscription-tier .subscribe-btn {
-  background-color: #2a9d8f;
+  background-color: #05885c;
   color: white;
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(5, 136, 92, 0.3);
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
 }
 
-.subscription-tier .subscribe-btn:hover {
-  background-color: #218579;
+.subscription-tier .subscribe-btn:hover,
+.subscription-tier .subscribe-btn:focus {
+  background-color: #046d4a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(5, 136, 92, 0.4);
 }
 
 .subscription-tier.recommended {
-  border: 2px solid #2a9d8f;
+  border: 2px solid #05885c;
   transform: scale(1.05);
 }
 
@@ -146,7 +191,7 @@
   position: absolute;
   top: -12px;
   right: 20px;
-  background-color: #2a9d8f;
+  background-color: #05885c;
   color: white;
   padding: 5px 15px;
   border-radius: 20px;
@@ -172,13 +217,13 @@
 }
 
 #content > h1::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
-  background-color: #2a9d8f;
+  background-color: #05885c;
   border-radius: 2px;
 }

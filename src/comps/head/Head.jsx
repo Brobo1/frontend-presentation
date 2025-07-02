@@ -4,11 +4,11 @@ export function Head() {
       <div id={"navbar"}>
         <h1 id={"navbarTitle"}>DinOppgave</h1>
         <div id={"navbarBtns"}>
-          <p>Prosjekter</p>
-          <p>For Fagfolk</p>
-          <p>Min Hjemmeside</p>
-          <p>Legg ut oppdrag</p>
-          <p>Logg inn</p>
+          <button className="nav-btn">Prosjekter</button>
+          <button className="nav-btn">For Fagfolk</button>
+          <button className="nav-btn">Min Hjemmeside</button>
+          <button className="nav-btn">Legg ut oppdrag</button>
+          <button className="nav-btn highlight">Logg inn</button>
         </div>
       </div>
     </>
