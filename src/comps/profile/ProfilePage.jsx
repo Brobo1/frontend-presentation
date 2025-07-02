@@ -121,9 +121,13 @@ export function ProfilePage() {
             <div className="card-content">
               {userData.availableProjects.map(project => (
                 <div key={project.id} className="available-project">
-                  <h3>{project.title}</h3>
-                  <p>Sted: {project.location}</p>
-                  <p>Budsjett: {project.budget}</p>
+                  <div className="project-info">
+                    <h3>{project.title}</h3>
+                    <p>Sted: {project.location}</p>
+                  </div>
+                  <div className="project-price">
+                    <p>{project.budget}</p>
+                  </div>
                 </div>
               ))}
             </div>
