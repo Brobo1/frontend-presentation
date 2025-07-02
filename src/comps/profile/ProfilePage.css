@@ -1,0 +1,371 @@
+.profile-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-page h1 {
+  font-weight: 600;
+  font-size: 2.2em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.profile-page h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #05885c;
+  border-radius: 2px;
+}
+
+.profile-cards-container {
+  display: flex;
+  gap: 35px;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.left-column {
+  flex: 3;
+}
+
+.right-column {
+  flex: 9;
+}
+
+.profile-card {
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+  border: 1px solid #eaeaea;
+  overflow: hidden;
+  height: fit-content;
+}
+
+/* Card styling */
+.user-info-card, .user-level-card, .statistics-card, .achievements-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-card {
+  background: linear-gradient(to bottom, #ffffff, #f0f7f4);
+  box-shadow: 0 8px 20px rgba(5, 136, 92, 0.15);
+  border: 1px solid rgba(5, 136, 92, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-card .card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(5, 136, 92, 0.2);
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom, #ffffff, #f0f7f4);
+}
+
+.profile-card h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.profile-card h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #05885c;
+  border-radius: 2px;
+}
+
+.card-content {
+  padding: 10px 0;
+}
+
+/* Profile Image and User Info */
+.user-info-card {
+  padding: 15px;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #05885c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  text-align: center;
+}
+
+.user-info p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.3;
+}
+
+/* Daily Challenge Card */
+.challenge {
+  padding: 15px;
+  background-color: rgba(5, 136, 92, 0.05);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.challenge h3 {
+  color: #05885c;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.challenge p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.bonus-xp {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 215, 0, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.xp-icon {
+  color: #FFD700;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.bonus-xp strong {
+  color: #05885c;
+}
+
+/* Card 3: Available Projects */
+.available-project {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.available-project:hover {
+  background-color: rgba(5, 136, 92, 0.05);
+}
+
+.available-project:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.available-project h3 {
+  margin: 0 0 8px 0;
+  color: #05885c;
+  font-size: 1.2em;
+}
+
+.available-project p {
+  color: #555;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+
+/* Card 4: User Level */
+.progress-bar-container {
+  height: 20px;
+  background-color: rgba(5, 136, 92, 0.1);
+  border-radius: 10px;
+  margin: 15px 0;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #05885c;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(5, 136, 92, 0.3);
+}
+
+/* User Level and Statistics Cards */
+.user-level-card, .statistics-card {
+  padding: 15px;
+}
+
+.user-level-card h2, .statistics-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.user-level-card p, .statistics-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.user-level-card strong, .statistics-card strong {
+  color: #05885c;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+/* Card 6: Reviews */
+.review {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.review:hover {
+  background-color: rgba(5, 136, 92, 0.05);
+}
+
+.review:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.rating {
+  color: #05885c;
+  font-weight: 700;
+}
+
+.review p {
+  color: #555;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* Card 7: Achievements */
+.achievements-card {
+  padding: 15px;
+}
+
+.achievements-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.achievement {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
+.achievement:hover {
+  background-color: rgba(5, 136, 92, 0.05);
+}
+
+.achievement:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.achievement h3 {
+  margin: 0 0 5px 0;
+  color: #05885c;
+  font-size: 1.1em;
+}
+
+.achievement p {
+  color: #555;
+  line-height: 1.3;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .profile-cards-container {
+    flex-direction: row;
+  }
+
+  .left-column {
+    flex: 1;
+  }
+
+  .right-column {
+    flex: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-cards-container {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+}

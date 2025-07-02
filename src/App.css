@@ -21,6 +21,12 @@
   font-size: 2em;
   margin: 0;
   font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#navbarTitle:hover {
+  color: #05885c;
 }
 
 #navbarBtns {
