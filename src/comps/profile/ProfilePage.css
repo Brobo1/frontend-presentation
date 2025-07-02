@@ -273,6 +273,33 @@
   letter-spacing: 0.01em;
 }
 
+.project-details-btn {
+  font-family: var(--font-body);
+  background-color: #05885c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+  letter-spacing: 0.02em;
+}
+
+.project-details-btn:hover {
+  background-color: #046d4a;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(5, 136, 92, 0.3);
+}
+
+.project-details-btn:active {
+  background-color: #035a3d;
+  transform: translateY(0px);
+  box-shadow: 0 1px 3px rgba(5, 136, 92, 0.4);
+}
+
 /* Card 4: User Level */
 .progress-bar-container {
   height: 20px;

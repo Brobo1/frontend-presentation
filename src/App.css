@@ -54,11 +54,16 @@
   font-size: 0.95rem;
 }
 
-.nav-btn:hover,
-.nav-btn:focus {
+.nav-btn:hover {
   background-color: rgba(5, 136, 92, 0.1);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-btn:active {
+  background-color: rgba(5, 136, 92, 0.2);
+  transform: translateY(0px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-btn.highlight {
@@ -67,11 +72,16 @@
   box-shadow: 0 4px 10px rgba(5, 136, 92, 0.3);
 }
 
-.nav-btn.highlight:hover,
-.nav-btn.highlight:focus {
+.nav-btn.highlight:hover {
   background-color: #046d4a;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(5, 136, 92, 0.4);
+}
+
+.nav-btn.highlight:active {
+  background-color: #035a3d;
+  transform: translateY(0px);
+  box-shadow: 0 4px 8px rgba(5, 136, 92, 0.5);
 }
 
 #stepsContainer {
@@ -240,11 +250,16 @@
   overflow: hidden;
 }
 
-.subscription-tier .subscribe-btn:hover,
-.subscription-tier .subscribe-btn:focus {
+.subscription-tier .subscribe-btn:hover {
   background-color: #046d4a;
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(5, 136, 92, 0.4);
+}
+
+.subscription-tier .subscribe-btn:active {
+  background-color: #035a3d;
+  transform: translateY(0px);
+  box-shadow: 0 4px 8px rgba(5, 136, 92, 0.5);
 }
 
 .subscription-tier.recommended {

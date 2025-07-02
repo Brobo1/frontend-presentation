@@ -4,19 +4,19 @@ import './ProfilePage.css';
 export function ProfilePage() {
   // Mock data - in a real application, this would come from an API or state
   const userData = {
-    name: "John Doe",
-    company: "ABC Construction",
+    name: "Ola Nordmann",
+    company: "Nordmann Bygg AS",
     reliability: 4.8,
-    profileImage: "https://ui-avatars.com/api/?name=John+Doe&background=05885c&color=fff&size=128",
+    profileImage: "https://ui-avatars.com/api/?name=Ola+Nordmann&background=05885c&color=fff&size=128",
     dailyChallenge: {
-      title: "Complete a bathroom renovation project",
-      description: "Finish a bathroom renovation within 7 days",
+      title: "Fullfør et baderom renoveringsprosjekt",
+      description: "Fullfør en baderom renovering innen 7 dager",
       bonusXP: 50
     },
     availableProjects: [
-      { id: 1, title: "Office Renovation", location: "Oslo", budget: "50,000 kr" },
-      { id: 2, title: "Home Extension", location: "Bergen", budget: "120,000 kr" },
-      { id: 3, title: "Deck Building", location: "Trondheim", budget: "35,000 kr" }
+      { id: 1, title: "Kontor Renovering", location: "Oslo", budget: "50,000 kr" },
+      { id: 2, title: "Hus Utvidelse", location: "Bergen", budget: "120,000 kr" },
+      { id: 3, title: "Terrasse Bygging", location: "Trondheim", budget: "35,000 kr" }
     ],
     level: {
       current: 3,
@@ -29,8 +29,8 @@ export function ProfilePage() {
       averageRating: 4.7
     },
     latestReviews: [
-      { id: 1, author: "Maria S.", rating: 5, comment: "Excellent work, very professional!" },
-      { id: 2, author: "Anders L.", rating: 4, comment: "Good quality work, finished on time." }
+      { id: 1, author: "Maria S.", rating: 5, comment: "Utmerket arbeid, veldig profesjonell!" },
+      { id: 2, author: "Anders L.", rating: 4, comment: "Bra kvalitet på arbeidet, ferdig til avtalt tid." }
     ],
     achievements: [
       { id: 1, title: "Top Rated Professional", description: "Maintained 4.5+ rating for 6 months" },
@@ -128,6 +128,7 @@ export function ProfilePage() {
                   <div className="project-price">
                     <p>{project.budget}</p>
                   </div>
+                  <button className="project-details-btn">Se detaljer</button>
                 </div>
               ))}
             </div>
