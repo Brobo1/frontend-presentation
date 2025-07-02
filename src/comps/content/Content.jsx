@@ -1,24 +1,28 @@
 import { Step } from "./steps/Step.jsx";
 import { SubscriptionTier } from "./subscriptions/SubscriptionTier.jsx";
+import img from "../../assets/img.png";
+import img1 from "../../assets/img_1.png";
+import img2 from "../../assets/img_2.png";
+import img3 from "../../assets/img_3.png";
 
 const STEPS = [
   {
-    imgSrc: "src/assets/img.png",
+    imgSrc: img,
     heading: "1. Logg inn & Verifiser",
     desc: "Bruk Apple, Google, Facebook, og verifiser deg trygt med Vipps",
   },
   {
-    imgSrc: "src/assets/img_1.png",
+    imgSrc: img1,
     heading: "2. Registrer Firma",
     desc: "Legg inn ditt org.nr. Vi tar en KYC-sjekk for din og kundens trygghet.",
   },
   {
-    imgSrc: "src/assets/img_2.png",
+    imgSrc: img2,
     heading: "3. Velg Abonnement",
     desc: "Lås opp fulle oppdragsdetaljer og kontaktinformasjon.",
   },
   {
-    imgSrc: "src/assets/img_3.png",
+    imgSrc: img3,
     heading: "4. Start å Tjene",
     desc: "Svar på oppdrag, få jobben og motta gode tilbakemeldinger.",
   },

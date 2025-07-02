@@ -7,7 +7,10 @@ export function SubscriptionTier({ title, price, features, recommended }) {
         <div className="price">{price}</div>
         <ul className="features">
           {features.map((feature, index) => (
-            <li key={index}>{feature}</li>
+            <li key={index}>
+              <span className="feature-icon">✓</span>
+              <span className="feature-text">{feature}</span>
+            </li>
           ))}
         </ul>
         <button className="subscribe-btn">Velg</button>

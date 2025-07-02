@@ -1,12 +1,69 @@
-# React + Vite
+# React + Vite Frontend Presentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application built with Vite, designed to showcase a frontend presentation.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To start the development server:
 
-## Expanding the ESLint configuration
+```bash
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To build the project:
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## GitHub Pages Deployment
+
+This project is configured for deployment to GitHub Pages using the `gh-pages` package.
+
+### Configuration
+
+Before deploying, update the following:
+
+1. In `package.json`, change the `homepage` field to match your GitHub username and repository:
+
+```json
+"homepage": "https://YOUR_GITHUB_USERNAME.github.io/frontend-presentation",
+```
+
+2. Make sure the `base` path in `vite.config.js` matches your repository name:
+
+```javascript
+base: '/frontend-presentation/',
+```
+
+### Deployment Steps
+
+1. Commit and push your changes to GitHub
+2. Run the deploy command:
+
+```bash
+npm run deploy
+```
+
+This will:
+- Build your project (`npm run build`)
+- Push the build files to the `gh-pages` branch of your repository
+- Make your site available at the URL specified in the `homepage` field
+
+### First-time Setup
+
+If this is your first time deploying to GitHub Pages:
+
+1. Make sure your repository is public
+2. After running `npm run deploy`, go to your repository settings on GitHub
+3. Navigate to "Pages" in the sidebar
+4. Under "Source", select "Deploy from a branch"
+5. Select the `gh-pages` branch and save
+
+Your site should now be published at the URL shown in the GitHub Pages section.

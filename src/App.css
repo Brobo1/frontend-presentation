@@ -114,45 +114,95 @@
 }
 
 .subscription-tier {
-  background-color: white;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
   border-radius: 12px;
-  padding: 25px;
+  padding: 30px;
   width: 280px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+  border: 1px solid #eaeaea;
 }
 
 .subscription-tier:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom, #ffffff, #f0f7f4);
 }
 
 .subscription-tier h2 {
   color: #333;
   margin-top: 0;
   font-size: 1.8em;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.subscription-tier h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #05885c;
+  border-radius: 2px;
 }
 
 .subscription-tier .price {
-  font-size: 1.6em;
-  font-weight: 600;
+  font-size: 1.8em;
+  font-weight: 700;
   color: #05885c;
-  margin: 15px 0;
+  margin: 20px 0;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscription-tier .features {
   text-align: left;
-  padding-left: 20px;
+  padding-left: 0;
   margin: 20px 0;
   min-height: 180px;
+  list-style-type: none;
 }
 
 .subscription-tier .features li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #555;
+  display: flex;
+  align-items: flex-start;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.subscription-tier .features li:hover {
+  background-color: rgba(5, 136, 92, 0.05);
+}
+
+.subscription-tier .feature-icon {
+  color: #05885c;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background-color: rgba(5, 136, 92, 0.1);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.subscription-tier .feature-text {
+  line-height: 1.4;
 }
 
 .subscription-tier .subscribe-btn {
@@ -181,10 +231,14 @@
 .subscription-tier.recommended {
   border: 2px solid #05885c;
   transform: scale(1.05);
+  background: linear-gradient(to bottom, #ffffff, #e6f7f0);
+  box-shadow: 0 8px 20px rgba(5, 136, 92, 0.15);
 }
 
 .subscription-tier.recommended:hover {
   transform: scale(1.05) translateY(-5px);
+  background: linear-gradient(to bottom, #ffffff, #d9f2e6);
+  box-shadow: 0 12px 25px rgba(5, 136, 92, 0.2);
 }
 
 .recommended-badge {
@@ -193,14 +247,15 @@
   right: 20px;
   background-color: #05885c;
   color: white;
-  padding: 5px 15px;
+  padding: 6px 16px;
   border-radius: 20px;
   font-weight: 600;
   font-size: 0.9em;
+  box-shadow: 0 4px 8px rgba(5, 136, 92, 0.3);
+  letter-spacing: 0.5px;
 }
 
 #content {
-  margin: 30px 20px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
