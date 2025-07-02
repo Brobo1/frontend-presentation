@@ -11,20 +11,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 5px 30px;
   background-color: #d4f8e0;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 #navbarTitle {
   font-size: 2em;
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #navbarBtns {
   display: flex;
   flex-direction: row;
   font-weight: 600;
-  gap: 10px;
+  gap: 20px;
+}
+
+#stepsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+#content {
+  margin: 0 20px;
+}
+
+#content > h1 {
+  font-weight: 400;
+  font-size: 2em;
 }
