@@ -77,7 +77,7 @@
 #stepsContainer {
   display: flex;
   gap: 30px;
-  margin: 30px 0 50px;
+  margin: 30px 0 30px;
   justify-content: center;
 }
 
