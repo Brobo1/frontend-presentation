@@ -1,15 +1,14 @@
 .profile-page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .profile-page h1 {
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 2.2em;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: #333;
   position: relative;
   display: inline-block;
@@ -38,7 +37,8 @@
   justify-content: center;
 }
 
-.left-column, .right-column {
+.left-column,
+.right-column {
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -68,7 +68,10 @@
 }
 
 /* Card styling */
-.user-info-card, .user-level-card, .statistics-card, .achievements-card {
+.user-info-card,
+.user-level-card,
+.statistics-card,
+.achievements-card {
   display: flex;
   flex-direction: column;
 }
@@ -201,7 +204,7 @@
 }
 
 .xp-icon {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 1.5em;
   margin-right: 10px;
 }
@@ -288,17 +291,20 @@
 }
 
 /* User Level and Statistics Cards */
-.user-level-card, .statistics-card {
+.user-level-card,
+.statistics-card {
   padding: 15px;
 }
 
-.user-level-card h2, .statistics-card h2 {
+.user-level-card h2,
+.statistics-card h2 {
   font-size: 1.5em;
   margin-bottom: 15px;
   text-align: left;
 }
 
-.user-level-card p, .statistics-card p {
+.user-level-card p,
+.statistics-card p {
   font-family: var(--font-body);
   margin: 8px 0;
   font-size: 0.95rem;
@@ -308,7 +314,8 @@
   letter-spacing: 0.01em;
 }
 
-.user-level-card strong, .statistics-card strong {
+.user-level-card strong,
+.statistics-card strong {
   color: #05885c;
   font-size: 1.2rem;
   display: inline-block;
@@ -368,6 +375,7 @@
 .achievements-card h2 {
   font-size: 1.5em;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .achievement {
@@ -429,7 +437,8 @@
     flex-direction: column;
   }
 
-  .left-column, .right-column {
+  .left-column,
+  .right-column {
     width: 100%;
   }
 }
