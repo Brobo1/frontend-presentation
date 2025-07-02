@@ -11,9 +11,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 30px;
-  background-color: #d4f8e0;
+  padding: 10px 30px;
+  background-color: #2a9d8f;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  color: white;
 }
 
 #navbarTitle {
@@ -31,14 +32,153 @@
 
 #stepsContainer {
   display: flex;
+  gap: 30px;
+  margin: 30px 0 50px;
+  justify-content: center;
+}
+
+#stepContainer {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#stepContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#stepContainer img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+#stepContainer h2 {
+  color: #2a9d8f;
+  margin: 10px 0;
+  font-size: 1.3em;
+}
+
+#stepContainer p {
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+#subscriptionContainer {
+  display: flex;
   gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.subscription-tier {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscription-tier:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.subscription-tier h2 {
+  color: #333;
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+.subscription-tier .price {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #2a9d8f;
+  margin: 15px 0;
+}
+
+.subscription-tier .features {
+  text-align: left;
+  padding-left: 20px;
+  margin: 20px 0;
+  min-height: 180px;
+}
+
+.subscription-tier .features li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.subscription-tier .subscribe-btn {
+  background-color: #2a9d8f;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscription-tier .subscribe-btn:hover {
+  background-color: #218579;
+}
+
+.subscription-tier.recommended {
+  border: 2px solid #2a9d8f;
+  transform: scale(1.05);
+}
+
+.subscription-tier.recommended:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.recommended-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
 }
 
 #content {
-  margin: 0 20px;
+  margin: 30px 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #content > h1 {
-  font-weight: 400;
-  font-size: 2em;
+  font-weight: 600;
+  font-size: 2.2em;
+  margin-top: 50px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#content > h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #2a9d8f;
+  border-radius: 2px;
 }

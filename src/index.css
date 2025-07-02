@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  background-color: #f5f7f9;
+  background: linear-gradient(135deg, #f5f7f9 0%, #e8f4f2 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
